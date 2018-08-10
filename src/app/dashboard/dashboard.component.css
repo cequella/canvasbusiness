@@ -1,0 +1,23 @@
+.board {
+    width: 90%;
+    height: 10px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 10px;
+}
+.boardColumn {
+    grid-column-end: span 2;
+}
+.fullColumn {
+    grid-row-end: span 2;
+}
+.halfColumnUp {
+    grid-row: 2;
+}
+.halfColumnDown {
+    grid-row: 3;
+}
+.line {
+    grid-column-end: span 5;
+}
