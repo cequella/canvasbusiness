@@ -1,22 +1,27 @@
 .board {
-    width: 90%;
     height: 10px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-gap: 10px;
+
+    counter-reset: fullColumnId;
 }
 .boardColumn {
     grid-column-end: span 2;
 }
+.fullColumn::before {
+    counter-increment: fullColumnId;
+}
+/*grid-column-start: calc(4*counter(fullColumnId) +1);*/
 .fullColumn {
-    grid-row-end: span 2;
+    grid-row: 3 / span 2;
 }
 .halfColumnUp {
-    grid-row: 2;
+    grid-row: 3;
 }
 .halfColumnDown {
-    grid-row: 3;
+    grid-row: 4;
 }
 .line {
     grid-column-end: span 5;

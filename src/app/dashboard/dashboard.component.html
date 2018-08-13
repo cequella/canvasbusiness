@@ -1,54 +1,31 @@
 <div class="board">
 
-  <div style="grid-column-end: span 4; background: white;">
-    <h3 class="mat-h2">ProjectName</h3>
-    <mat-card>Simple card</mat-card>
-    <mat-card>Simple card</mat-card>
-  </div>
-  <div style="grid-column-end: span 2; background: white;">
-    Designed for:
-  </div>
-  <div style="grid-column-end: span 2; background: white;">
-    Designed by:
-  </div>
-  <div style="background: white;">
-    Date:
-  </div>
-  <div style="background: white;">
-    Version:
-  </div>
-  
-  <div class="boardColumn fullColumn" style="grid-column-start: 1; grid-row-start: 2">
-    Key Partners
-  </div>
-  
-  <div class="boardColumn halfColumnUp">
-    Key Activities
-  </div>
-  <div class="boardColumn halfColumnDown">
-    Key Resources
-  </div>
-  
-  <div class="boardColumn fullColumn" style="grid-column-start: 5; grid-row-start: 2">
-    Value Propositions
-  </div>
-  
-  <div class="boardColumn halfColumnUp">
-    Customer Relationships
-  </div>
-  <div class="boardColumn halfColumnDown">
-    Channels
-  </div>
-  
-  <div class="boardColumn fullColumn" style="grid-column-start: 9; grid-row-start: 2;">
-    Customer Segments
-  </div>
+  <mat-form-field style="grid-column-end: span 10;">
+    <input matInput placeholder="Project name">
+  </mat-form-field>
+  <mat-form-field style="grid-column-end: span 4;">
+    <input matInput placeholder="Project name">
+  </mat-form-field>
+  <mat-form-field style="grid-column-end: span 3;">
+    <input matInput placeholder="Designed for">
+  </mat-form-field>
+  <mat-form-field style="grid-column-end: span 3;">
+    <input matInput placeholder="Designed by">
+  </mat-form-field>
 
-  <div class="line">
-    Cost Structure
-  </div>
-  <div class="line">
-    Revenue Streams
-  </div>
+  <app-variable-list class="boardColumn fullColumn" style="" title="Key Partners"></app-variable-list>
+  
+  <app-variable-list class="boardColumn halfColumnUp" title="Key Activities"></app-variable-list>
+  <app-variable-list class="boardColumn halfColumnDown" title="Key Resources"></app-variable-list>
+
+  <app-variable-list class="boardColumn fullColumn" style="" title="Value Propositions"></app-variable-list>
+
+  <app-variable-list class="boardColumn halfColumnUp" title="Customer Relationships"></app-variable-list>
+  <app-variable-list class="boardColumn halfColumnDown" title="Channels"></app-variable-list>
+
+  <app-variable-list class="boardColumn fullColumn" style="" title="Customer Segments"></app-variable-list>
+
+  <app-variable-list class="line" title="Cost Structure"></app-variable-list>
+  <app-variable-list class="line" title="Revenue Streams"></app-variable-list>
 
 </div>
