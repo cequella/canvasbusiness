@@ -1,0 +1,10 @@
+<p class="mat-body-1">{{title}}</p>
+<mat-card *ngIf="content.length>0">
+  <mat-card-content *ngFor="let i of content">
+    {{i}}
+  </mat-card-content>
+</mat-card>
+<button mat-stroked-button (click)="addLabel()">
+  <mat-icon>add</mat-icon>
+  <span>Add more</span>
+</button>
